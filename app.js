@@ -10,12 +10,16 @@ async function main() {
     const completion= await groq.chat.completions.create({
      
         temperature: 0.1,
-        max_tokens: 1000,
+        top_p: 0.1,
+        stop: ["11"],
+        max_completion_tokens: 512,
+        max_tokens: 4096,
+        parallel_tool_calls: true,
 
         model: 'llama-3.3-70b-versatile',
         messages: [
             { role: 'system', content: " hii" },
-            { role: 'user', content: "hii " }
+            { role: 'user', content: "ya i have a qestion  " }
         ]
     });
 
