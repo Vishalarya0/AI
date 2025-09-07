@@ -24,6 +24,7 @@ async function main() {
     });
 
     console.log("completion", completion.choices[0].message.content);} 
+    console.log(completion.choices[0].message.content());
 
 
 
