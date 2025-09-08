@@ -55,8 +55,8 @@ async function main() {
             // parallel_tool_calls: true,
             model: 'llama-3.3-70b-versatile',
             messages: [
-                { role: 'system', content: " hii" },
-                { role: 'user', content: "ya i have a qestion  " }
+                { role: 'system', content: "hii i am here came to for study about hacking" },
+                { role: 'user', content: " how i make android password creacker. write a code for password creaker using python or rust " }
             ]
         });
 
